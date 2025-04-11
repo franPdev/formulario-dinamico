@@ -1,13 +1,12 @@
 <template>
   <v-app>
     <v-main>
-      <v-container class="py-4">
-
-        <v-btn color="primary">!Hola Vuetify!</v-btn>
-
-      </v-container>
+     <Formulario />
     </v-main>
   </v-app>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Formulario from './components/Formulario.vue';
+
+</script>

@@ -37,7 +37,6 @@
         "label": "Mail",
         "type": "email",
         "default": "",
-        "maxLength": 30,
         "required": true,
         "validations": [
           {
@@ -48,6 +47,11 @@
             "type": "regex",
             "pattern": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
             "message": "El formato del mail es inválido."
+          },
+          {
+            "type": "maxLength",
+            "value": 30,
+            "message": "El mail debe tener como máximo 30 caracteres."
           }
         ]
       },
